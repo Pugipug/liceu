@@ -79,11 +79,10 @@ void welcomeScreen()
        if (strlen(citat.c_str())>80)
             cout << endl << endl << endl << endl << endl;
        else cout << endl << endl << endl << endl << endl << endl << endl;;
-       type("Apasa orice tasta pentru a deschide meniul . . . ");
+       type("Apasati pe enter pentru a deschide meniul . . . ");
        typed++;
     }
     }
-
 
 }
 }
