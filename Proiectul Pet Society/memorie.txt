@@ -1,0 +1,8 @@
+ID	    Nume		                 Tip                                  Rasa                                Varsta (in luni)                   Adoptat		   Vaccinat                            Sterilizat
+1 	    Luci                 	    CAINE                	    Mops                 	    5                    	    DA 	                               DA 	                               DA                  
+2 	    Tinkerbell           	    PISICA               	    Sfinx                	    16                   	    DA 	                               DA 	                               NU                  
+3 	    Sunshine             	    PISICA               	    Manx                 	    6                    	    NU 	                               DA 	                               DA                  
+4 	    Caramel              	    CAINE                	    Beagle               	    10                   	    NU 	                               DA 	                               NU                  
+5 	    Pumpkin              	    CAINE                	    Chihuahua            	    10                   	    DA 	                               NU 	                               NU                  
+6 	    Pufi                 	    CAINE                	    YorkshireTerrier     	    60                   	    DA 	                               NU 	                               NU                  
+
