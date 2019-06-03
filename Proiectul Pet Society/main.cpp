@@ -3,9 +3,10 @@ int main()
 {
    SetConsoleTitle("Pet Society");
    system("mode con COLS=700");
-   ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
-   SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),0 |BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED | BACKGROUND_INTENSITY);
+    ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),0 |BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED | BACKGROUND_INTENSITY);
    welcomeScreen();
+   cin.get();
    loadingScreen("Se incarca meniul . . . ", 10, 2);
 
 
@@ -381,11 +382,11 @@ int main()
 
                 type ("In adapost exista: "); cout << endl;
                 type ("- "); cout << n-1; type(" animalute"); cout << endl;
-                type ("- "); cout << ((nrCatelusi*100)/(float)(n-1)); type("% catelusi"); cout << endl;
-                type ("- "); cout << ((nrPisicute*100)/(float)(n-1)); type("% pisicute"); cout << endl;
-                type ("- "); cout << ((nrAnimaleAdoptate*100)/(float)(n-1)); type("% animale adoptate"); cout << endl;
-                type ("- "); cout << ((nrAnimaleVaccinate*100)/(float)(n-1)); type("% animale vaccinate"); if (((nrAnimaleVaccinate*100)/n)<50) type("(!)"); cout << endl;
-                type ("- "); cout << ((nrAnimaleSterilizate*100)/(float)(n-1)); type("% animale sterilizate"); if (((nrAnimaleSterilizate*100)/n)<50) type("(!)"); cout << endl;
+                type ("- "); cout << setprecision(3) << ((nrCatelusi*100)/(float)(n-1)); type("% catelusi"); cout << endl;
+                type ("- "); cout << setprecision(3) << ((nrPisicute*100)/(float)(n-1)); type("% pisicute"); cout << endl;
+                type ("- "); cout << setprecision(3) << ((nrAnimaleAdoptate*100)/(float)(n-1)); type("% animale adoptate"); cout << endl;
+                type ("- "); cout << setprecision(3) << ((nrAnimaleVaccinate*100)/(float)(n-1)); type("% animale vaccinate"); if (((nrAnimaleVaccinate*100)/n)<50) type("(!)"); cout << endl;
+                type ("- "); cout << setprecision(3) << ((nrAnimaleSterilizate*100)/(float)(n-1)); type("% animale sterilizate"); if (((nrAnimaleSterilizate*100)/n)<50) type("(!)"); cout << endl;
                 cout << endl; type("! - Necesita atentie!");
 
 
