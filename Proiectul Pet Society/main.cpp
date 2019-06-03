@@ -3,8 +3,8 @@ int main()
 {
    SetConsoleTitle("Pet Society");
    system("mode con COLS=700");
-    ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),0 |BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED | BACKGROUND_INTENSITY);
+   ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
+   SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),0 |BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED | BACKGROUND_INTENSITY);
    welcomeScreen();
    loadingScreen("Se incarca meniul . . . ", 10, 2);
 
