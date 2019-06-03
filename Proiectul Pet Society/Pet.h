@@ -5,9 +5,9 @@
 
 struct Pet
 {
-        char nume[20],rasa[20],numePersoanaAdoptiva[20],tip[20];
-        int ID{},varstaAni{}, varstaLuni{},stare{};
-        bool esteCaine,estePisica,adoptat = 0,sterilizat{},vaccinat{},deparazitat{};
+        char nume[20],rasa[20],tip[20];
+        int ID{},varstaLuni{};
+        bool esteCaine,estePisica,adoptat = 0,sterilizat = 0, vaccinat = 0;
         int OK();
 
 
