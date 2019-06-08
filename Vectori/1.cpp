@@ -9,7 +9,7 @@ int main()
     //  a) Sa se afiseze sirul de numere
     //  b) Sa se calculeze si sa se afiseze suma numerelor pare
     //  c) Sa se calculeze si sa se afiseze produsul numerelor ce au ultima cifra 7
-    */
+    
 
     int v[101],i,n,Sp=0;
 
