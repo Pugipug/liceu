@@ -4,10 +4,11 @@ using namespace std;
 
 int main()
 {
-    //1.vectori
-    /* Se citeste un sir de cel mult 100 de nuemre intregi: a) sa se afiseze sirul de numere
-    b) sa se calculeze si sa se afiseze suma numerelor pare
-    c) sa se calculeze si sa se afiseze produsul numerelor ce au ultima cifra 7
+    //  1.vectori
+    //  Se citeste un sir de cel mult 100 de nuemre intregi: 
+    //  a) Sa se afiseze sirul de numere
+    //  b) Sa se calculeze si sa se afiseze suma numerelor pare
+    //  c) Sa se calculeze si sa se afiseze produsul numerelor ce au ultima cifra 7
     */
 
     int v[101],i,n,Sp=0;
@@ -20,8 +21,6 @@ int main()
     {
         cout<<"v["<<i<<"]="; cin >> v[i];
     }
-
-    // a)
 
     cout<<endl<<"a)"<<endl;
 
