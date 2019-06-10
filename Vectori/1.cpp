@@ -2,75 +2,67 @@
 
 using namespace std;
 
-int main()
-{
-    //  1.vectori
-    //  Se citeste un sir de cel mult 100 de nuemre intregi: 
+    //  Se citeste un sir de cel mult 100 de numere intregi
     //  a) Sa se afiseze sirul de numere
     //  b) Sa se calculeze si sa se afiseze suma numerelor pare
     //  c) Sa se calculeze si sa se afiseze produsul numerelor ce au ultima cifra 7
-    
+    //  d) Sa se ordoneze sirul crescator
 
-    int v[101],i,n,Sp=0;
-
-
-    cout << "n="; cin >> n;
+int main() {
 
 
-    for (i=1;i<=n;i++)
-    {
-        cout<<"v["<<i<<"]="; cin >> v[i];
+  int v[100], n, sumaPare = 0, produsCifra7 = 1;
+
+  cout << "n=";
+  cin >> n;
+
+  for (int i = 0; i < n; i++) {
+    cout << "Elementul " << i+1 << ": ";
+    cin >> v[i];
+  }
+
+  cout << endl << "a) Sirul este: ";
+
+  for (int i = 0; i < n; i++) {
+    cout << v[i] << " ";
+  }
+
+  cout << endl << "b) Suma numerelor pare: ";
+
+  for (int i = 0; i < n; i++) {
+    if (v[i] % 2 == 0) sumaPare = sumaPare + v[i];
+  }
+
+  cout << sumaPare;
+
+  cout << endl << "c) Produsul numerelor cu ultima cifra 7: ";
+
+  for (int i = 0; i < n; i++) {
+    if (v[i] % 10 == 7) produsCifra7 = produsCifra7 * v[i];
+  }
+
+  if (produsCifra7 == 1)
+    cout << "NU EXISTA";
+  else
+    cout << produsCifra7;
+
+  cout << endl << "d) Sirul sortat crescator: ";
+
+
+  for (int i = 0; i < n-1; i++)
+
+    for (int j = i + 1; j < n; j++) {
+      if (v[i] > v[j]) {
+        int aux;
+        aux = v[i];
+        v[i] = v[j];
+        v[j] = aux;
+      }
     }
 
-    cout<<endl<<"a)"<<endl;
+  for (int i = 0; i < n; i++) {
+    cout << v[i] << " ";
+  }
 
-    for (i=1;i<=n;i++)
-    {
-        cout << v[i] << " ";
-    }
-
-
-    cout<<endl<<"b) Suma= "<<endl;
-
-    for(i=1;i<=n;i++)
-    {
-        if(v[i]%2==0)
-            Sp=Sp+v[i];
-    }
-
-
-    cout << Sp;
-
-    cout<<endl<<"c) Produsul="<<endl;
-
-    int P=1;
-    for (i=1;i<=n;i++)
-    {
-        if(v[i]%10==7)
-            P=P*v[i];
-    }
-
-    if(P!=1) cout << P; else cout << "Nu exista numere care au ultima cifra 7";
-    cout<<endl<<"d) Sortare crescator: ";
-    int aux,j;
-
-    for (i=1;i<=n-1;i++)
-
-        for(j=i+1;j<=n;j++)
-        {
-            if(v[i]>v[j])
-            {
-                aux=v[i];
-                v[i]=v[j];
-                v[j]=aux;
-
-            }
-        }
-    for (i=1;i<=n;i++)
-    {
-        cout << v[i] << " ";
-    }
-
-
-    return 0;
+  return 0;
 }
