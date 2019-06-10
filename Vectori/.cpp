@@ -13,7 +13,7 @@ int main() {
 
   int v[100], n, sumaPare = 0, produsCifra7 = 1;
 
-  cout << "n=";
+  cout << "Numarul de elemente: ";
   cin >> n;
 
   for (int i = 0; i < n; i++) {
