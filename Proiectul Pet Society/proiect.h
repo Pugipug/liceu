@@ -31,7 +31,7 @@ string menuText3[3] = {"1. Cautare dupa ID", "2. Cautare dupa nume",
 string menuText4[4] = {
     "1. Marcati animalul drept adoptat", "2. Marcati animalul drept vaccinat",
     "3. Marcati animalul drept sterilizat", "4. Intoarcere la meniu"};
-int p{};
+int p = 0;
 
 void type(const char* p) {
   for (int i = 0; i < strlen(p); i++) {
@@ -43,7 +43,7 @@ void type(const char* p) {
 void type(string p) { type(p.c_str()); }
 
 void getQuote(string& linie) {
-  int random{}, numarLinie{};
+  int random = 0, numarLinie = 0;
   srand(time(0));
   random = 1 + rand() % 10;
   fstream Quotes("data\\quotes.txt");
@@ -56,7 +56,7 @@ void getQuote(string& linie) {
 }
 
 void welcomeScreen() {
-  int i = 1, typed{};
+  int i = 1, typed = 0;
   string citat;
   getQuote(citat);
   while (!kbhit()) {
