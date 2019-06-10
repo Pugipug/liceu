@@ -4,8 +4,7 @@
 using namespace std;
 
 // Se citesc 2 vectori a si b de dimensiuni n respectiv m
-// Sa se afiseze cate numere din primul vector sunt mai mari decat toate
-// numerele din al doilea vector
+// Sa se afiseze cate numere din primul vector sunt mai mari decat toate numerele din al doilea vector
 
 int main() {
   int a[100], b[100], n, m, max = INT_MIN, nr = 0;
