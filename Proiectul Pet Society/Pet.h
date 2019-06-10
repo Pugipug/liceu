@@ -5,8 +5,8 @@
 
 struct Pet {
   char nume[20], rasa[20], tip[20];
-  int ID{}, varstaLuni{};
-  bool esteCaine, estePisica, adoptat = 0, sterilizat = 0, vaccinat = 0;
+  int ID = 0, varstaLuni = 0;
+  bool esteCaine = 0, estePisica = 0, adoptat = 0, sterilizat = 0, vaccinat = 0;
   int OK();
 
 } pet[100];
